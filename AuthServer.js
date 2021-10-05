@@ -37,7 +37,7 @@ res.json({ accessToken :accessToken , refreshToken: refreshToken})
 
 
 function generateAccessToken(user){
-
+                                                                                                            // adding expiration date
    return jwt.sign(user,process.env.ACCESS_TOKEN_SECRET,{expiresIn :'30s'})
 
 }
